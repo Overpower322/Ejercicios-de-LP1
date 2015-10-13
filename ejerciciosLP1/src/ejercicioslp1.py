@@ -1,0 +1,70 @@
+def Calculadora():
+    print(":::::::::::::::::::") 
+    print("operanciones     ::") 
+    print(":::::::::::::::::::") 
+    print("suma:           1::") 
+    print("resta:          2::") 
+    print("multiplicacion: 3::") 
+    print("division:       4::") 
+    print("potencia:       5::") 
+    print("raiz cuadrada:  6::") 
+    print("salir           7::") 
+    print(":::::::::::::::::::") 
+    a = input("seleccione una operacion:") 
+    print("===========================") 
+    import math 
+    if int(a) == 1: 
+        print("suma") 
+        b = input("primer numero n> ") 
+        b = int(b) 
+        c = input("segundo numero n> ") 
+        c = int(c) 
+        print("el resultado es :n", b + c) 
+    elif int(a) == 2: 
+        print("resta") 
+        b = input("primer numero n> ") 
+        b = int(b) 
+        c = input("segundo numero n>") 
+        c = int(c) 
+        print("el resultado es :n", b - c) 
+    elif int(a) == 3: 
+        print("multiplicacion") 
+        b = input("primer numero n> ") 
+        b = int(b) 
+        c = input("segundo numero n> ") 
+        c = int(c) 
+        print("el resultado es :n", b * c) 
+    elif int(a) == 4: 
+        print("division") 
+        b = input("primer numero n> ") 
+        b = int(b) 
+        c = input("segundo numero n> ") 
+        c = int(c) 
+        print("el resultado es :n", b / c) 
+    elif int(a) == 5: 
+        print("potencia :A elevado a la B") 
+        b = input("primer numero n> ") 
+        b = int(b) 
+        c = input("segundo numero n> ") 
+        c = int(c) 
+        print("el resultado es :n", b ** c) 
+    elif int(a) == 6: 
+        print("raiz cuadrada") 
+        b = input("ingrese un numero: n> ") 
+        print(math.sqrt(int(b))) 
+    elif int(a) == 7: 
+        exit() 
+    else: 
+        print("comando no valido") 
+    print("========================") 
+    print("echo")
+    print("Eliga una opcion")
+    print("1-seguir operando")
+    print("2-salir")
+    valor = input("> " )
+    if valor == 1 :
+        Calculadora()
+    elif valor == 2 :
+        print("========================") 
+   
+Calculadora()
